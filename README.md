@@ -340,7 +340,8 @@ Overall, this project demonstrates how data analysis can be used to understand b
 
 ## 👨‍💻 Project By
 
-**Your Name**
+**Purv Banugariya**
+**Ridham Patel**
 
 Superstore Sales Analysis
 Data Analysis Project
