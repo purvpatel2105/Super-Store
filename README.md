@@ -1,351 +1,176 @@
-# Superstore-Sales-Analysis 📊
-
-Data cleaning, exploratory data analysis and visualization of Superstore sales data using Python.
-
-# Superstore Sales Analysis 📊
-## 🚀 Google Colab
-
-You can view and run the complete Superstore Sales Analysis project in Google Colab:
-
-👉 [Open Superstore Sales Analysis in Google Colab](https://colab.research.google.com/drive/15dF1SgTdv3aYOF7Kp5Z3kR-d9JiVvd5E?usp=sharing)
-
-
-## 📌 Project Overview
-
-This project analyzes the **Superstore Sales Dataset** using Python.
-
-The main purpose of this project is to clean the dataset, explore sales and profit patterns, analyze customer segments and regions, and create meaningful visualizations to understand business performance.
-
-The project follows a complete data analysis workflow starting from **raw CSV data → data cleaning → exploratory data analysis → visualization → business insights**.
-
-## 🎯 Objectives
-
-* Load and understand the Superstore dataset
-* Clean and prepare the data for analysis
-* Check missing values and duplicate records
-* Analyze data types and date columns
-* Analyze total sales, profit and quantity
-* Analyze sales by category and sub-category
-* Analyze sales and profit by region
-* Analyze customer segments
-* Analyze shipping methods
-* Find top-selling products
-* Find most profitable products
-* Analyze monthly and yearly sales trends
-* Analyze the relationship between discount and profit
-* Perform correlation analysis
-* Create meaningful data visualizations
-* Generate useful business insights
-
-## 📂 Dataset
-
-The dataset used in this project is the **Superstore Dataset**.
-
-📂 [Dataset – Superstore Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
-
-The dataset contains information such as:
-
-* Row ID
-* Order ID
-* Order Date
-* Ship Date
-* Ship Mode
-* Customer ID
-* Customer Name
-* Segment
-* Country
-* City
-* State
-* Postal Code
-* Region
-* Product ID
-* Category
-* Sub-Category
-* Product Name
-* Sales
-* Quantity
-* Discount
-* Profit
-
-## 🛠️ Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Google Colab
-
-## 🔍 Data Cleaning & Preparation
-
-The dataset was inspected and prepared before performing the analysis.
-
-The following steps were performed:
-
-1. Loaded the CSV dataset using Pandas
-2. Checked the dataset shape and column names
-3. Checked missing values
-4. Checked duplicate records
-5. Examined data types
-6. Converted `Order Date` into proper date format
-7. Converted `Ship Date` into proper date format
-8. Extracted the year from `Order Date`
-9. Verified numerical columns such as Sales, Quantity, Discount and Profit
-10. Prepared the dataset for exploratory data analysis
-
-## 📊 Exploratory Data Analysis
-
-The project analyzes different aspects of the Superstore business data.
-
-### 💰 Overall Business Performance
-
-The following metrics were calculated:
-
-* Total Sales
-* Total Profit
-* Total Quantity Sold
-* Average Order Value
-* Overall Profit Margin
-
-### 📦 Category Analysis
-
-Sales and profit were analyzed across:
-
-* Furniture
-* Office Supplies
-* Technology
-
-The analysis helps identify which categories generate the highest sales and profit.
-
-### 🏷️ Sub-Category Analysis
-
-The project analyzes:
-
-* Sales by Sub-Category
-* Profit by Sub-Category
-
-This helps identify the best-performing and low-performing product groups.
-
-### 🌎 Regional Analysis
-
-Sales and profit were analyzed across different regions.
-
-The project identifies:
-
-* Region with highest sales
-* Region with highest profit
-* Regional sales distribution
-* Regional profit performance
-
-### 👥 Customer Segment Analysis
-
-Sales were analyzed across:
-
-* Consumer
-* Corporate
-* Home Office
-
-This helps understand which customer segment contributes the most revenue.
-
-### 🚚 Ship Mode Analysis
-
-Sales were analyzed based on different shipping methods:
-
-* Standard Class
-* Second Class
-* First Class
-* Same Day
-
-### 🏆 Product Analysis
-
-The project identifies:
-
-* Top 10 products by sales
-* Top 10 most profitable products
-* Bottom 10 products by profit
-
-This helps understand which products contribute most to business performance.
-
-## 📅 Time-Based Analysis
-
-The project analyzes sales trends over time.
-
-### Monthly Analysis
-
-Monthly sales were calculated to identify:
-
-* High-sales months
-* Low-sales months
-* Overall sales trends
-
-### Yearly Analysis
-
-Year-wise sales and profit were analyzed to understand business growth and performance over different years.
-
-## 📉 Discount & Profit Analysis
-
-The relationship between **Discount** and **Profit** was analyzed.
-
-This helps understand whether increasing discounts have an effect on average profit.
-
-A visualization was created to observe the relationship between discount levels and profitability.
-
-## 🔗 Correlation Analysis
-
-Correlation analysis was performed on the following numerical variables:
-
-* Sales
-* Quantity
-* Discount
-* Profit
-
-A correlation matrix and heatmap were created to understand relationships between these variables.
-
-## 📊 Data Visualizations
-
-The project includes several visualizations such as:
-
-* Sales by Category
-* Profit by Category
-* Sales by Region
-* Sales by Customer Segment
-* Top 10 Products by Sales
-* Monthly Sales Trend
-* Sales vs Profit
-* Top 10 States by Sales
-* Sales and Profit by Category
-* Discount vs Average Profit
-* Correlation Heatmap
-* Year-wise Sales and Profit
-* Sales by Sub-Category
-* Profit by Sub-Category
-
-These visualizations make it easier to identify important business patterns and trends.
-
-## 💡 Key Insights
-
-From the analysis, we can understand that:
-
-* Sales and profit vary significantly across categories.
-* Different regions contribute differently to overall sales and profit.
-* Customer segments have different levels of sales contribution.
-* A small number of products generate a significant portion of sales.
-* Some products generate high sales but comparatively lower profit.
-* Sales performance changes over time.
-* Discounts can have an impact on profitability.
-* Sales, quantity, discount and profit have different relationships with each other.
-* Some states and regions contribute significantly to overall business performance.
-* Profitability is not always directly proportional to sales.
-
-## 📈 Business Analysis
-
-The analysis can help businesses:
-
-* Identify high-performing product categories
-* Identify profitable and low-profit products
-* Understand customer segment performance
-* Compare regional performance
-* Monitor sales trends
-* Understand the effect of discounts
-* Improve product and pricing strategies
-* Make data-driven business decisions
-
-## 📁 Project Structure
-
+Superstore Sales Analysis - Data Analysis Project
+1. Project Definition
+This project is about exploring and understanding the sales data of a retail company, the Superstore Sales Dataset. The dataset contains information such as order date, ship date, shipping mode, customer segment, region, state, product category, sub-category, sales, quantity, discount, and profit.
+The main aim of the project is not just to make graphs, but to first clean the data and then use it to find simple and useful business patterns. We will use Python to answer questions such as:
+Which product categories and sub-categories generate the most sales and profit?
+Which regions and states perform best, and which perform worst?
+Which customer segment contributes the most revenue?
+How have sales and profit changed over the months and years?
+Do higher discounts reduce profit?
+Which products are top sellers, and which ones lose money?
+Is high sales always linked to high profit?
+The final output will be a cleaned dataset, at least 6 visualizations, and a short report explaining what we found from the data.
+---
+2. Dataset Used
+Dataset: Superstore Dataset
+Source: Kaggle
+Link: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
+The main file we will use for the analysis is `Sample - Superstore.csv`.
+The file contains:
+9,994 rows (order line items)
+21 columns
+Information about orders, customers, locations, products, sales, discounts, and profit
+Important columns
+Column	What it tells us
+`Order Date`	Date when the order was placed
+`Ship Date`	Date when the order was shipped
+`Ship Mode`	Shipping method (Standard, Second, First, Same Day)
+`Segment`	Customer segment (Consumer, Corporate, Home Office)
+`Region` / `State` / `City`	Where the order was delivered
+`Category` / `Sub-Category`	Product group
+`Product Name`	Name of the product
+`Sales`	Sales amount
+`Quantity`	Number of units sold
+`Discount`	Discount applied to the order
+`Profit`	Profit (or loss) on the order
+---
+3. Dataset Use Case
+This dataset can be used to understand the performance of a retail business from a data-analysis point of view.
+For example, a store manager could use this type of analysis to decide which product categories to promote, which regions need attention, which products are losing money, and how much discount is safe to offer.
+For our project, we are mainly using the dataset for learning data cleaning, exploratory data analysis (EDA), visualization, and basic business insight generation.
+We are not trying to predict future sales. The focus is on understanding the data and finding patterns from the available information.
+---
+4. Data Cleaning and Preparation
+Before making visualizations, we will clean and prepare the data.
+Missing values: check every column for missing values and handle them carefully instead of deleting rows unnecessarily.
+Duplicates: check for duplicate records, including repeated `Row ID` values.
+Data types: convert `Order Date` and `Ship Date` from text to datetime, and confirm that `Sales`, `Quantity`, `Discount`, and `Profit` are numeric.
+New columns: create `Order Year`, `Order Month`, and `Profit Margin` (Profit / Sales x 100).
+Outliers: inspect extreme sales and profit values using the IQR method and box plots. We will not delete them automatically, because large orders and large losses may be real and important.
+---
+5. Visualizations Planned
+We will create at least 6 visualizations. The final number can be higher if additional plots give useful information.
+Visualization 1 - Sales and Profit by Category
+Graph: Grouped bar chart
+What we want to understand: Which of Furniture, Office Supplies, and Technology earns the most sales and profit.
+Expected outcome: Technology is likely to lead in profit, while Furniture may show high sales but a low profit margin.
+---
+Visualization 2 - Sales and Profit by Sub-Category
+Graph: Horizontal bar chart
+What we want to understand: Which product groups are strong, and which ones lose money.
+Expected outcome: Some sub-categories (for example, Tables) may show high sales but negative profit, showing that sales alone do not mean success.
+---
+Visualization 3 - Sales and Profit by Region
+Graph: Bar chart or pie chart
+What we want to understand: How sales and profit are distributed across regions.
+Expected outcome: One region will likely lead in sales and profit, while another may show weaker profitability.
+---
+Visualization 4 - Sales by Customer Segment
+Graph: Pie chart or bar chart
+What we want to understand: Which customer segment brings in the most revenue.
+Expected outcome: The Consumer segment is likely to contribute the largest share.
+---
+Visualization 5 - Top 10 Products by Sales
+Graph: Horizontal bar chart
+What we want to understand: Whether a small number of products generate a large part of total sales.
+Expected outcome: A few products stand out clearly, and we can compare them with the most profitable products.
+---
+Visualization 6 - Monthly Sales Trend
+Graph: Line chart
+What we want to understand: Whether sales follow a seasonal pattern across months.
+Expected outcome: Sales are likely to rise in the last months of the year and be lower early in the year.
+---
+Visualization 7 - Year-wise Sales and Profit
+Graph: Line chart or grouped bar chart
+What we want to understand: Whether the business is growing from year to year.
+Expected outcome: An overall upward trend in sales, with profit possibly growing at a different rate.
+---
+Visualization 8 - Discount vs Average Profit
+Graph: Bar chart or scatter plot
+What we want to understand: How different discount levels affect profit.
+Expected outcome: Higher discounts are likely to be linked with lower or negative profit.
+---
+Visualization 9 - Top 10 States by Sales
+Graph: Horizontal bar chart
+What we want to understand: Which states contribute the most to total sales.
+Expected outcome: A small group of states is likely to account for a large share of sales.
+---
+Visualization 10 - Correlation Heatmap
+Graph: Heatmap
+What we want to understand: How `Sales`, `Quantity`, `Discount`, and `Profit` relate to each other.
+Expected outcome: Sales and profit show a positive relationship, while discount shows a negative relationship with profit. Correlation does not prove cause and effect.
+---
+6. Python Libraries / Tools We Will Use
+Tool	Used for
+Python	Main language for cleaning, analysis, and visualization
+Pandas	Reading the CSV, cleaning, grouping, filtering, creating new columns
+NumPy	Numerical operations and calculations
+Matplotlib	Bar charts, line charts, histograms, scatter plots, pie charts
+Seaborn	Statistical plots and the correlation heatmap
+Google Colab / Jupyter Notebook	Writing and running code step by step, keeping charts and notes together
+Kaggle	Source of the dataset
+Git and GitHub	Version control and publishing the project
+---
+7. What We Expect to Learn from the Dataset
+Which categories, sub-categories, regions, and segments perform best.
+Why high sales do not always mean high profit.
+How sales change over time.
+How discounts affect profitability.
+How outliers can affect analysis.
+Each graph will be followed by a short insight explaining what we can learn from it.
+---
+8. Final Deliverables
+Cleaned dataset / cleaned dataframe
+Jupyter notebook (`.ipynb`) with the complete analysis
+At least 6 visualizations
+Short insights for each visualization
+Final summary / report explaining the main findings
+GitHub repository with documentation
+---
+9. GitHub Repository and Documentation
+GitHub Link: https://github.com/yourusername/Superstore-Sales-Analysis
+(Replace `yourusername` with your GitHub username.)
+The repository will contain the documentation and project files:
 ```text
 Superstore-Sales-Analysis/
 │
-├── Superstore-Sales-Analysis.ipynb
-├── Sample - Superstore.csv
-└── README.md
+├── Superstore-Sales-Analysis.ipynb   # Complete analysis notebook
+├── Sample - Superstore.csv           # Dataset
+└── README.md                         # Project documentation (this file)
 ```
-
-## ▶️ How to Run the Project
-
-### 1. Clone the Repository
-
+How to run the project
+Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Superstore-Sales-Analysis.git
-```
-
-### 2. Open Google Colab
-
-Upload:
-
-```text
-Superstore-Sales-Analysis.ipynb
-```
-
-### 3. Upload the Dataset
-
-Upload the Superstore CSV file when requested by the notebook.
-
-### 4. Run the Notebook
-
+   git clone https://github.com/yourusername/Superstore-Sales-Analysis.git
+   ```
+Open Google Colab and upload `Superstore-Sales-Analysis.ipynb`.
+Upload `Sample - Superstore.csv` when the notebook asks for it.
 Run the cells from top to bottom to reproduce the analysis.
-
-## 📌 Project Workflow
-
+---
+10. Project Flow
 ```text
-Raw Dataset
-     ↓
-Data Loading
-     ↓
-Data Inspection
-     ↓
+Kaggle Dataset
+      ↓
+Load CSV using Pandas
+      ↓
+Check data shape and columns
+      ↓
 Data Cleaning
-     ↓
-Date Conversion
-     ↓
+(Missing Values + Duplicates + Data Types + Outliers)
+      ↓
+Data Preparation
+      ↓
 Exploratory Data Analysis
-     ↓
-Statistical Analysis
-     ↓
-Data Visualization
-     ↓
-Business Insights
-     ↓
-Conclusion
+      ↓
+Create 6+ Visualizations
+      ↓
+Write Short Insights
+      ↓
+Final Report / Conclusion
 ```
-
-## 📚 Learning Outcomes
-
-Through this project, the following skills were developed:
-
-* Python Data Analysis
-* Pandas
-* NumPy
-* Data Cleaning
-* Exploratory Data Analysis
-* Data Visualization
-* Matplotlib
-* Seaborn
-* GroupBy Analysis
-* Time-Series Analysis
-* Correlation Analysis
-* Business Intelligence
-* Data Interpretation
-
-## ✅ Conclusion
-
-This project demonstrates the complete process of analyzing a real-world retail dataset using Python.
-
-Starting from raw Superstore sales data, the project performs data inspection, cleaning, exploratory analysis, visualization and business interpretation.
-
-The analysis provides useful insights into **sales, profit, products, customer segments, regions, discounts and time-based trends**.
-
-Python libraries such as **Pandas, NumPy, Matplotlib and Seaborn** were used to transform raw data into meaningful information.
-
-Overall, this project demonstrates how data analysis can be used to understand business performance and support **data-driven decision making**.
-
-## 👨‍💻 Project By
-
-**Purv Banugariya** /
-**Ridham Patel**
-
-Superstore Sales Analysis
-Data Analysis Project
-
-## ⭐ If you found this project useful
-
-Feel free to ⭐ star this repository and use the project for learning and educational purposes.
+---
+11. Conclusion
+This project will use the Superstore Sales dataset to practice the complete basic data-analysis workflow. We will start with raw data, clean it properly, create meaningful visualizations, and explain the business patterns we find in simple language.
+The goal is to show not only that we can write Python code and make graphs, but also that we can understand a dataset and turn it into useful information for decision making.
+---
+Project By: Ridham Patel and Purv Banugariya
