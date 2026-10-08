@@ -220,11 +220,7 @@ Each graph will be followed by a **short insight** explaining what we can learn 
 
 ## 9. GitHub Repository and Documentation
 
-**GitHub Link:** https://github.com/yourusername/Superstore-Sales-Analysis
 
-*(Replace `yourusername` with your GitHub username.)*
-
-The repository will contain the documentation and project files:
 
 ```text
 Superstore-Sales-Analysis/
