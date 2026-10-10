@@ -276,3 +276,5 @@ The goal is to show not only that we can write Python code and make graphs, but 
 ---
 
 **Project By:** Ridham Patel and Purv Banugariya
+
+**Google Colab** https://colab.research.google.com/drive/15dF1SgTdv3aYOF7Kp5Z3kR-d9JiVvd5E?usp=sharing
