@@ -1,4 +1,4 @@
-# Superstore Sales Analysis - Data Analysis Project :
+# Superstore Sales Analysis - Data Analysis Project 
 
 ## 1. Project Definition
 
